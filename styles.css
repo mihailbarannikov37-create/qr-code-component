@@ -1,0 +1,68 @@
+/* Base styles */
+:root{
+  --bg-slate-300: hsl(212, 45%, 89%);
+  --text-slate-900: hsl(218, 44%, 22%);
+  --text-slate-500: hsl(216, 15%, 48%);
+  --white: hsl(0,0%,100%);
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: 'Outfit', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background:var(--bg-slate-300);
+  color:var(--text-slate-900);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:32px;
+}
+
+.page{max-width:600px; width:100%;}
+
+.card{
+  background:var(--white);
+  border-radius:16px;
+  padding:24px;
+  width:320px;
+  margin:0 auto;
+  box-shadow: 0 20px 30px rgba(16,24,40,0.12);
+  text-align:center;
+}
+
+.qr{
+  width:100%;
+  max-width:220px;
+  border-radius:12px;
+  display:block;
+  margin:0 auto 20px;
+}
+
+.title{
+  font-size:18px;
+  line-height:1.2;
+  margin:0 0 12px;
+  color:var(--text-slate-900);
+}
+
+.description{
+  font-size:15px;
+  color:var(--text-slate-500);
+  margin:0;
+}
+
+.attribution{
+  font-size:11px;
+  text-align:center;
+  margin-top:20px;
+  color:var(--text-slate-900);
+}
+.attribution a{color:var(--text-slate-900); text-decoration:underline}
+
+/* Desktop layout */
+@media (min-width: 768px){
+  body{padding:40px}
+  .card{padding:32px; width:340px}
+  .title{font-size:20px}
+}
